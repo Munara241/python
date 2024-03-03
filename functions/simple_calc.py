@@ -3,21 +3,21 @@
 # It should take 2 numbers as user input. Also, take a arithmetic operation as user input.
 
 def calc():
-    num1 = float (input())
-    num2 = float (input())
+    num1 = float (input("enter first number: "))
+    num2 = float (input("enter second number: "))
 
-oper = input (" Please enter operation: + - * / \n")
+    oper = str(input (" Please enter operation: + - * / \n"))
 
- if oper == " + ":
-     return num1 + num2
-    elif oper == " - ":
-        return num1 - num2
-    elif oper == " * ":
-        return num1 * num2
-     elif oper == " / ":
-        return num1 / num2
+    if oper ==  '+':
+      return num1 + num2
+    elif oper == '-':
+      return num1 - num2
+    elif oper == '*':
+      return num1 * num2
+    elif oper == '/':
+      return num1 / num2
     else:
-      print("wrong symbol")
+      return ("wrong symbol")
 
 var1 = calc ()
 print (var1)
